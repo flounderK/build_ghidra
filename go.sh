@@ -1,9 +1,5 @@
 #!/bin/bash
 
-
-git submodule init
-git submodule update
-
 docker build -t "build_ghidra" .
 # generate a random name so that it is not a static name
 CONTAINER_NAME=$(tr -dc A-Za-z0-9 </dev/random | head -c 13)
