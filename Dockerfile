@@ -16,4 +16,4 @@ RUN git clone "https://github.com/NationalSecurityAgency/ghidra"
 WORKDIR /workdir/ghidra
 
 # CMD bash
-ENTRYPOINT ["../build_ghidra.sh"]
+CMD ["../build_ghidra.sh"]
